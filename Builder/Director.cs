@@ -4,7 +4,8 @@ namespace DesignPatterns.Builder
     {
         IBuilder builder;
         // steps to create complex object
-        public void Construct(IBuilder builder){
+        public void Construct(IBuilder builder)
+        {
             this.builder = builder;
             builder.StartUpOperations();
             builder.BuildBody();

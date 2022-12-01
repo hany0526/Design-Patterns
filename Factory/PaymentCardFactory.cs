@@ -1,7 +1,7 @@
 namespace DesignPatterns.Factory
 {
-    public class PaymentCardFactory 
+    public class PaymentCardFactory
     {
-       
+
     }
 }

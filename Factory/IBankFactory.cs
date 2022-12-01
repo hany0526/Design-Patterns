@@ -4,6 +4,6 @@ namespace DesignPatterns.Factory
     {
         IBank GetBank(string bankCode);
         IPaymentCard GetPaymentCard(string cardNumber);
-        
+
     }
 }

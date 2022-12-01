@@ -11,7 +11,7 @@ namespace DesignPatterns.Builder
             this.brandName = brand;
         }
         public void StartUpOperations()
-        {   
+        {
             product.Add($"Car Model name :{this.brandName}");
         }
         public void BuildBody() { product.Add("Body of car was added"); }
@@ -20,7 +20,7 @@ namespace DesignPatterns.Builder
         {
             product.Add("Headlights are added");
         }
-        public void EndOperations(){ /*End Operation*/ }
+        public void EndOperations() { /*End Operation*/ }
         public Product GetVehicle() { return product; }
     }
 }

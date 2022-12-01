@@ -1,12 +1,12 @@
 namespace DesignPatterns.Factory
 {
-    public class BankA:IBank
+    public class BankA : IBank
     {
-        public  string Withdraw()
+        public string Withdraw()
         {
-              return "Your request is handling by BankA";
+            return "Your request is handling by BankA";
         }
 
-       
+
     }
 }

@@ -2,6 +2,6 @@ namespace DesignPatterns.Factory
 {
     public interface IBank
     {
-         string Withdraw();
+        string Withdraw();
     }
 }

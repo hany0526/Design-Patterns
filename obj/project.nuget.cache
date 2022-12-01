@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0bT/Emwa5+YmQ4ttjUYoBg8EV6TqcWeJDN99Ru9TPmPq5JzEix5KJyfiLN7r8QG2ZWHndROX3azJn0+LBMOtfA==",
+  "dgSpecHash": "n1a7/c3aw8VGMRVKBizeasnHduDyZ9yJIpVq0aQGT1EqvYJnK7lV82KZb/MW3bOd4bNfEi4V9aEtFXy33pwCQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mreda\\Desktop\\DPGit\\Design-Patterns\\DesignPatterns.csproj",
+  "projectFilePath": "C:\\Users\\MohamedHany\\Documents\\GitHub\\Design-Patterns\\DesignPatterns.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mreda\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\MohamedHany\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }

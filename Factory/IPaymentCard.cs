@@ -2,8 +2,8 @@ namespace DesignPatterns.Factory
 {
     public interface IPaymentCard
     {
-         string GetName();
-         string GetProviderInfo();
+        string GetName();
+        string GetProviderInfo();
     }
 
     public class VisaCard : IPaymentCard
