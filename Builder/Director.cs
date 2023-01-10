@@ -13,5 +13,15 @@ namespace DesignPatterns.Builder
             builder.AddHeadlights();
             builder.EndOperations();
         }
+
+        public void BuildCar(IBuilder builder)
+        {
+            builder.StartUpOperations();
+            builder.BuildBody();
+            builder.InsertWheels();
+            builder.AddHeadlights();
+            builder.EndOperations();
+        }
+
     }
 }

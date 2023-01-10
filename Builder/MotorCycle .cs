@@ -4,20 +4,25 @@ namespace DesignPatterns.Builder
     {
         private string brandName;
         private Product product;
+
         public MotorCycle(string brand)
         {
             product = new Product();
             this.brandName = brand;
         }
+
         public void StartUpOperations() {/*Start*/}
+
         public void BuildBody()
         {
             product.Add("Body was added");
         }
+
         public void InsertWheels()
         {
             product.Add("wheels are added");
         }
+
         public void AddHeadlights()
         {
             product.Add("Headlights are added");

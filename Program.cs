@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.Builder;
+using System;
 
 namespace DesignPatterns
 {
@@ -14,6 +15,7 @@ namespace DesignPatterns
         static void Main(string[] args)
         {
             #region Creational Patterns
+
             #region singleton 
             /* Task task1 = Task.Factory.StartNew(() => {  
                Counter counter1 = Counter.GetInstance();
@@ -57,29 +59,32 @@ namespace DesignPatterns
             #endregion
 
             #region Builder
-            /*System.Text.StringBuilder sb =new System.Text.StringBuilder();
-             sb.Append("Word 1,");
-             sb.Append("Word 2");
-              
-             WriteColoredLine(sb.ToString(),ConsoleColor.Cyan);*/
-            /*WriteColoredLine("***Builder Pattern***",ConsoleColor.Yellow);
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("Word 1,");
+            sb.Append("Word 2");
+
+            WriteColoredLine(sb.ToString(), ConsoleColor.Cyan);
+            WriteColoredLine("***Builder Pattern***", ConsoleColor.Yellow);
             Director director = new Director();
             IBuilder carBuilder = new Car("Jeep");
-            IBuilder motorCycleBuilder = new MotorCycle("Honda");*/
+            IBuilder motorCycleBuilder = new MotorCycle("Honda");
 
             // Making Car
-            /*director.Construct(carBuilder);
+            /* */
+            director.BuildCar(carBuilder);
             Product car = carBuilder.GetVehicle();
             WriteColoredLine($"Car {car.Show()}");
-            
+
             //Making MotorCycle
-            director.Construct(motorCycleBuilder);
+            director.BuildCar(motorCycleBuilder);
             Product motorCycle = motorCycleBuilder.GetVehicle();
-            WriteColoredLine($"MotorCycle {motorCycle.Show()}");*/
+            WriteColoredLine($"MotorCycle {motorCycle.Show()}");
             #endregion
 
             #region Factory Method 
-            /*string cardNumber,bankCode;
+
+            /* 
+            string cardNumber,bankCode;
             BankFactory bankFactory = new BankFactory ();
 
             WriteColoredLine("Enter your card number",ConsoleColor.Cyan);
@@ -89,8 +94,11 @@ namespace DesignPatterns
             IPaymentCard paymentCard = bankFactory.GetPaymentCard("12");
 
             WriteColoredLine(bank.Withdraw());
-            WriteColoredLine(paymentCard.GetName());*/
+            WriteColoredLine(paymentCard.GetName());
+            */
+
             #endregion
+
             #endregion
 
             #region Structural Patterns
@@ -149,3 +157,4 @@ namespace DesignPatterns
         }
     }
 }
+

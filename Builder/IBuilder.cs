@@ -1,6 +1,8 @@
 namespace DesignPatterns.Builder
 {
+
     // Builders Interface
+
     public interface IBuilder
     {
         void StartUpOperations();
@@ -10,4 +12,5 @@ namespace DesignPatterns.Builder
         void EndOperations();
         Product GetVehicle();
     }
+
 }

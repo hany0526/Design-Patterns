@@ -13,11 +13,20 @@ namespace DesignPatterns.Singleton
             {
                 lock (lockObj)
                 {
-                    if (instance == null) { instance = new Counter(); }
+                    if (instance == null)
+                    {
+                        instance = new Counter();
+                    }
                 }
             }
+
             return instance;
         }
-        public void AddOne() { count++; }
+
+        public void AddOne()
+        {
+            count++;
+        }
+
     }
 }
