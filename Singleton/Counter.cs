@@ -4,8 +4,11 @@ namespace DesignPatterns.Singleton
     {
         public int count = 0;
         private static Counter instance = null;
-        private static object lockObj = new object();
-        private Counter() { }
+        private static object lockObj;
+        private Counter() 
+        {
+            lockObj = new object();
+        }
 
         public static Counter GetInstance()
         {
