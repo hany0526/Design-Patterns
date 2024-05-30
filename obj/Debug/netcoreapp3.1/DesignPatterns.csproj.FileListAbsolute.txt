@@ -57,3 +57,19 @@ C:\Users\MohamedHany\Documents\GitHub\Design-Patterns\obj\Debug\netcoreapp3.1\De
 C:\Users\MohamedHany\Documents\GitHub\Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.dll
 C:\Users\MohamedHany\Documents\GitHub\Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.pdb
 C:\Users\MohamedHany\Documents\GitHub\Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.genruntimeconfig.cache
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.exe
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.deps.json
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.runtimeconfig.json
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.runtimeconfig.dev.json
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.dll
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\DesignPatterns.pdb
+D:\Learning Projects\Creational-Design-Patterns\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.csproj.AssemblyReference.cache
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfoInputs.cache
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfo.cs
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.csproj.CoreCompileInputs.cache
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.csproj.CopyComplete
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.dll
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.pdb
+D:\Learning Projects\Creational-Design-Patterns\obj\Debug\netcoreapp3.1\DesignPatterns.genruntimeconfig.cache
