@@ -7,6 +7,5 @@ namespace DesignPatterns.Factory
             return "Your request is handling by BankA";
         }
 
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Builder;
+using DesignPatterns.Factory;
 using DesignPatterns.Prototype;
 using System;
 
@@ -33,25 +34,28 @@ namespace DesignPatterns
 
             #region Builder
 
-                BuilderService.runBuilder();
+                // BuilderService.runBuilder();
 
             #endregion
 
             #region Factory Method 
 
-            /* 
-            string cardNumber,bankCode;
-            BankFactory bankFactory = new BankFactory ();
+            /* */ 
+            string cardNumber, bankCode;
 
-            WriteColoredLine("Enter your card number",ConsoleColor.Cyan);
-            cardNumber=Console.ReadLine();
-            bankCode=cardNumber.Substring(0,6);
+            BankFactory bankFactory = new BankFactory();
+            PaymentCardFactory paymentFactory = new();
+
+            WriteColoredLine("Enter your card number", ConsoleColor.Cyan);
+            cardNumber = Console.ReadLine();
+            bankCode = cardNumber.Substring(0, 6);
+
             IBank bank = bankFactory.GetBank(bankCode);
-            IPaymentCard paymentCard = bankFactory.GetPaymentCard("12");
+            IPaymentCard paymentCard = paymentFactory.GetPaymentCard("12");
 
             WriteColoredLine(bank.Withdraw());
             WriteColoredLine(paymentCard.GetName());
-            */
+            /* */
 
             #endregion
 

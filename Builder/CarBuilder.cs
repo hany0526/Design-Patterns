@@ -7,6 +7,11 @@ namespace DesignPatterns.Builder
         private string brandName;
         private Product product;
 
+        public CarBuilder()
+        {
+            product = new Product();
+        }
+
         public CarBuilder(string brand)
         {
             brandName = brand;

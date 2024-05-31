@@ -27,21 +27,20 @@ namespace DesignPatterns.Builder
             Director director = new Director();
 
             // 1, Making Car
-            IProductBuilder carBuilder = new CarBuilder("Jeep");
+            IProductBuilder carBuilder = ProductFactory.getInstance(1, "Jeep");
             director.constructProduct(carBuilder);
             Product car = carBuilder.GetVehicle();
              WriteColoredLine($"Car {car.Show()}");
 
             // 2, Making Motor Cycle
-            IProductBuilder motorCycleBuilder = new MotorCycleBuilder("Honda");
+            IProductBuilder motorCycleBuilder = ProductFactory.getInstance(2, "Honda");
             director.constructProduct(motorCycleBuilder);
-            Product motorCycle = motorCycleBuilder.GetVehicle();
+            Product motorCycle = carBuilder.GetVehicle();
             WriteColoredLine($"MotorCycle {motorCycle.Show()}");
 
             // 3, Making Small Vehicle
-            IProductBuilder smallVehicleBuilder = new SmallVehicleBuilder("Mine cooper");
+            IProductBuilder smallVehicleBuilder = ProductFactory.getInstance(3, "Mine cooper");
             director.constructProduct(smallVehicleBuilder);
-            // Product smallVehicle = smallVehicleBuilder.GetVehicle();
             WriteColoredLine($"smallVehicle { smallVehicleBuilder }");
 
         }

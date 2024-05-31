@@ -4,7 +4,12 @@ namespace DesignPatterns.Builder
     {
         private string brandName;
 
-        public MotorCycleBuilder(string brand)
+        public MotorCycleBuilder(string brand = "Motor")
+        {
+            brandName = brand;
+        }
+
+        public void setBrandName(string brand)
         {
             brandName = brand;
         }
