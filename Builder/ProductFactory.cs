@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DesignPatterns.Builder.Models;
 
 namespace DesignPatterns.Builder
 {
     public class ProductFactory
     {
-        public static IProductBuilder getInstance(int p, string name = "")
+        private static Product carInstance = null;
+        private static Product motorInstance = null;
+        private static Product smallVehicleInstance = null;
+
+        public ProductFactory() { }
+
+        public static Product getInstance(int p, string name = "")
         {
             switch (p)
             {
-                case 1: return new CarBuilder(name);
-                case 2: return new MotorCycleBuilder(name);
-                case 3: return new SmallVehicleBuilder(name);
+                case 1: return new Car(name);
+                case 2: return new MotorCycle(name);
+                case 3: return new SmallVehicle(name);
                 default: return null;
             }
         }
@@ -23,11 +25,23 @@ namespace DesignPatterns.Builder
         {
             switch (p)
             {
-                case "Car": return new CarBuilder(name);
-                case "Motor": return new MotorCycleBuilder(name);
-                case "SmallVehicle": return new SmallVehicleBuilder(name);
+                case "Car": return new Car(name);
+                case "Motor": return new MotorCycle(name);
+                case "SmallVehicle": return new SmallVehicle(name);
                 default : return null;
             }
         }
+
+        public static Product getSingeltonInstance(int p, string name = "")
+        {
+            switch (p)
+            {
+                case 1: return carInstance ??= new Car(name);
+                case 2: return motorInstance ??= new MotorCycle(name);
+                case 3: return smallVehicleInstance ??= new SmallVehicle(name);
+                default: return null;
+            }
+        }
+
     }
 }

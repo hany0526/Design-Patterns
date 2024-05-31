@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPatterns.Builder
+namespace DesignPatterns.Builder.Models
 {
-    public class Product
+    public abstract class Product // : IProductBuilder
     {
         private LinkedList<string> _parts;
 
@@ -11,6 +11,14 @@ namespace DesignPatterns.Builder
         {
             _parts = new LinkedList<string>();
         }
+
+        public abstract void setBrandName(string brand);
+
+        public abstract void StartUpOperations();
+        public abstract void BuildBody();
+        public abstract void InsertWheels();
+        public abstract void AddHeadlights();
+        public abstract void EndOperations();
 
         public void Add(string part)
         {
@@ -22,7 +30,7 @@ namespace DesignPatterns.Builder
         {
             StringBuilder result = new StringBuilder();
             result.AppendLine("Product components are :");
-           
+
             foreach (string part in _parts)
                 result.AppendLine(part);
 
@@ -32,6 +40,15 @@ namespace DesignPatterns.Builder
         public override string ToString()
         {
             return Show();
+        }
+
+        public void prepareProduct() 
+        {
+            StartUpOperations();
+            BuildBody();
+            InsertWheels();
+            AddHeadlights();
+            EndOperations();
         }
     }
 }

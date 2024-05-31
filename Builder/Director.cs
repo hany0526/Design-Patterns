@@ -1,17 +1,18 @@
-using System.Collections.Generic;
+
+using DesignPatterns.Builder.Models;
 
 namespace DesignPatterns.Builder
 {
     public class Director
     {
-        private IProductBuilder _builder;
+        private Product _builder;
        
         public Director()
         {
         }
 
         // steps to create complex object
-        public void constructProduct(IProductBuilder builder)
+        public void constructProduct(Product builder)
         {
             _builder = builder;
             doBuilder();

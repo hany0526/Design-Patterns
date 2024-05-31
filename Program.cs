@@ -34,13 +34,13 @@ namespace DesignPatterns
 
             #region Builder
 
-                // BuilderService.runBuilder();
+                BuilderService.runBuilder();
 
             #endregion
 
             #region Factory Method 
 
-            /* */ 
+            /* 
             string cardNumber, bankCode;
 
             BankFactory bankFactory = new BankFactory();
