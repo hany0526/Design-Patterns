@@ -1,7 +1,7 @@
 namespace DesignPatterns.Builder
 {
     // Concrete Builder.
-    public class CarBuilder : IBuilder
+    public class CarBuilder : IProductBuilder
     {
 
         private string brandName;

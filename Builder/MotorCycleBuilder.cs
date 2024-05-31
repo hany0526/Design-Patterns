@@ -1,14 +1,12 @@
 namespace DesignPatterns.Builder
 {
-    public class MotorCycleBuilder : IBuilder
+    public class MotorCycleBuilder : Product,  IProductBuilder
     {
         private string brandName;
-        private Product product;
 
         public MotorCycleBuilder(string brand)
         {
             brandName = brand;
-            product = new Product();
         }
 
         public void StartUpOperations()
@@ -16,29 +14,30 @@ namespace DesignPatterns.Builder
 
         public void BuildBody()
         {
-            product.Add("Body was added");
+            Add("Body was added");
         }
 
         public void InsertWheels()
         {
-            product.Add("wheels are added");
+            Add("wheels are added");
         }
 
         public void AddHeadlights()
         {
-            product.Add("Headlights are added");
+            Add("Headlights are added");
         }
         
         public void EndOperations()
         {
-            product.Add($"Motorcycle brand name {this.brandName}");
+            Add($"Motorcycle brand name {this.brandName}");
         }
         
-        public Product GetVehicle() { return product; }
+        public Product GetVehicle() { return this; }
 
         public override string ToString()
         {
-            return GetVehicle().Show();
+            return base.Show();
+            // return GetVehicle().Show();
         }
 
     }

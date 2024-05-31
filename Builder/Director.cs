@@ -4,18 +4,14 @@ namespace DesignPatterns.Builder
 {
     public class Director
     {
-        private IBuilder _builder;
+        private IProductBuilder _builder;
+       
         public Director()
         {
         }
 
-        public Director(IBuilder builder)
-        {
-            _builder = builder;
-        }
-
         // steps to create complex object
-        public void BuildProduct(IBuilder builder)
+        public void constructProduct(IProductBuilder builder)
         {
             _builder = builder;
             doBuilder();

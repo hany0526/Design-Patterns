@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Builder
 {
-    public class SmallVehicleBuilder: Product, IBuilder
+    public class SmallVehicleBuilder: Product, IProductBuilder
     {
         private string brandName;
 

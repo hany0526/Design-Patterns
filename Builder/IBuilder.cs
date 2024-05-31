@@ -3,7 +3,7 @@ namespace DesignPatterns.Builder
 
     // Builder Interface
 
-    public interface IBuilder
+    public interface IProductBuilder
     {
         void StartUpOperations();
         void BuildBody();
