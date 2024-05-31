@@ -5,34 +5,6 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
-    <Compile Include="obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="obj\Debug\netcoreapp3.1\DesignPatterns.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\DesignPatterns.csproj.nuget.dgspec.json" />
-    <Content Include="obj\project.assets.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="obj\Debug\netcoreapp3.1\apphost.exe" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.AssemblyInfoInputs.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.assets.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.csproj.BuildWithSkipAnalyzers" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.csproj.CopyComplete" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.csprojAssemblyReference.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.dll" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.exe" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.genruntimeconfig.cache" />
-    <None Include="obj\Debug\netcoreapp3.1\DesignPatterns.pdb" />
-    <None Include="obj\Debug\netcoreapp3.1\_IsIncrementalBuild" />
-    <None Include="obj\DesignPatterns.csproj.nuget.g.props" />
-    <None Include="obj\DesignPatterns.csproj.nuget.g.targets" />
-    <None Include="obj\project.nuget.cache" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>
