@@ -1,7 +1,7 @@
 namespace DesignPatterns.Builder
 {
 
-    // Builders Interface
+    // Builder Interface
 
     public interface IBuilder
     {

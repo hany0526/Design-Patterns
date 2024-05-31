@@ -1,28 +1,37 @@
+using System.Collections.Generic;
+using System.Text;
+
 namespace DesignPatterns.Builder
 {
     public class Product
     {
-        private System.Collections.Generic.LinkedList<string> parts;
+        private LinkedList<string> _parts;
 
         public Product()
         {
-            parts = new System.Collections.Generic.LinkedList<string>();
+            _parts = new LinkedList<string>();
         }
 
         public void Add(string part)
         {
             // Add car parts
-            parts.AddLast(part);
+            _parts.AddLast(part);
         }
 
         public string Show()
         {
-            System.Text.StringBuilder result = new System.Text.StringBuilder();
+            StringBuilder result = new StringBuilder();
             result.AppendLine("Product components are :");
-            foreach (string part in parts)
+           
+            foreach (string part in _parts)
                 result.AppendLine(part);
 
             return result.ToString();
+        }
+
+        public override string ToString()
+        {
+            return Show();
         }
     }
 }

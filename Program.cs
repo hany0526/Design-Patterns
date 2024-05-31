@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Prototype;
+﻿using DesignPatterns.Builder;
+using DesignPatterns.Prototype;
 using System;
 
 namespace DesignPatterns
@@ -25,34 +26,14 @@ namespace DesignPatterns
             #region prototype
 
 
-            // PrototypeService.runDeepCopy(); // Done
-             PrototypeService.runShallowCopy();
+                // PrototypeService.runDeepCopy(); // Done
+                // PrototypeService.runShallowCopy(); // not change same reference 
 
             #endregion
 
             #region Builder
 
-            /*
-            System.Text.StringBuilder sb = new System.Text.StringBuilder();
-            sb.Append("Word 1,");
-            sb.Append("Word 2");
-
-            WriteColoredLine(sb.ToString(), ConsoleColor.Cyan);
-            WriteColoredLine("***Builder Pattern***", ConsoleColor.Yellow);
-            Director director = new Director();
-            IBuilder carBuilder = new Car("Jeep");
-            IBuilder motorCycleBuilder = new MotorCycle("Honda");
-
-            // Making Car
-            director.BuildCar(carBuilder);
-            Product car = carBuilder.GetVehicle();
-            WriteColoredLine($"Car {car.Show()}");
-
-            //Making MotorCycle
-            director.BuildCar(motorCycleBuilder);
-            Product motorCycle = motorCycleBuilder.GetVehicle();
-            WriteColoredLine($"MotorCycle {motorCycle.Show()}");
-            /* */
+                BuilderService.runBuilder();
 
             #endregion
 

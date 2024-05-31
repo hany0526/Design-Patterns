@@ -1,17 +1,18 @@
 namespace DesignPatterns.Builder
 {
-    public class MotorCycle : IBuilder
+    public class MotorCycleBuilder : IBuilder
     {
         private string brandName;
         private Product product;
 
-        public MotorCycle(string brand)
+        public MotorCycleBuilder(string brand)
         {
+            brandName = brand;
             product = new Product();
-            this.brandName = brand;
         }
 
-        public void StartUpOperations() {/*Start*/}
+        public void StartUpOperations()
+        { }
 
         public void BuildBody()
         {
@@ -27,10 +28,18 @@ namespace DesignPatterns.Builder
         {
             product.Add("Headlights are added");
         }
+        
         public void EndOperations()
         {
             product.Add($"Motorcycle brand name {this.brandName}");
         }
+        
         public Product GetVehicle() { return product; }
+
+        public override string ToString()
+        {
+            return GetVehicle().Show();
+        }
+
     }
 }

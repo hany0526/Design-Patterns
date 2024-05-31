@@ -1,27 +1,33 @@
+using System.Collections.Generic;
+
 namespace DesignPatterns.Builder
 {
     public class Director
     {
-        IBuilder builder;
+        private IBuilder _builder;
+        public Director()
+        {
+        }
+
+        public Director(IBuilder builder)
+        {
+            _builder = builder;
+        }
+
         // steps to create complex object
-        public void Construct(IBuilder builder)
+        public void BuildProduct(IBuilder builder)
         {
-            this.builder = builder;
-            builder.StartUpOperations();
-            builder.BuildBody();
-            builder.InsertWheels();
-            builder.AddHeadlights();
-            builder.EndOperations();
+            _builder = builder;
+            doBuilder();
         }
 
-        public void BuildCar(IBuilder builder)
+        private void doBuilder()
         {
-            builder.StartUpOperations();
-            builder.BuildBody();
-            builder.InsertWheels();
-            builder.AddHeadlights();
-            builder.EndOperations();
+            _builder.StartUpOperations();
+            _builder.BuildBody();
+            _builder.InsertWheels();
+            _builder.AddHeadlights();
+            _builder.EndOperations();
         }
-
     }
 }
