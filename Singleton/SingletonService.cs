@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DesignPatterns.Singleton
@@ -10,25 +11,22 @@ namespace DesignPatterns.Singleton
         
         public static void runMain()
         {
-            Counter counter1 = Counter.GetInstance();
-            Counter counter2 = Counter.GetInstance();
 
-            Task task1 = Task.Factory.StartNew(() => {  
-            Counter counter1 = Counter.GetInstance();
-            counter1.AddOne();
-            Console.WriteLine("counter 1 : "+ counter1.count.ToString());
-         }); 
+            Task task1 = Task.Factory.StartNew(() => {
+                Counter counterA = Counter.GetHanyInstance();
+                counterA.AddOne();
+                Console.WriteLine("counter A : " + counterA.count.ToString());
+            });
 
-         Task task2 = Task.Factory.StartNew(() => {  
-            counter2 = Counter.GetInstance();
-            counter2.AddOne();
-            Console.WriteLine("counter 2 : "+ counter2.count.ToString());
-            Console.WriteLine();
-         }); 
-            
-            counter1.AddOne();
-            Console.WriteLine("counter 1 :"+ counter1.count.ToString());
-            Console.WriteLine("counter 2 :"+ counter2.count.ToString());
+            Thread.Sleep(100);
+
+            Task task2 = Task.Factory.StartNew(() => {
+                Counter counterB = Counter.GetHanyInstance();
+                counterB.AddOne();
+                Console.WriteLine("counter B : " + counterB.count.ToString());
+                Console.WriteLine();
+            });
+
         }
     }
 }

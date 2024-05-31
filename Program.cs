@@ -1,12 +1,14 @@
 ﻿using DesignPatterns.Builder;
+using DesignPatterns.Singleton;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
     class Program
     {
-        static void WriteColoredLine(
-            string text, ConsoleColor color = ConsoleColor.Green)
+        static void WriteColoredLine(string text, ConsoleColor color = ConsoleColor.Green)
         {
             Console.ForegroundColor = color;
             Console.WriteLine(text);
@@ -16,22 +18,11 @@ namespace DesignPatterns
         {
             #region Creational Patterns
 
-            #region singleton 
-            /* Task task1 = Task.Factory.StartNew(() => {  
-               Counter counter1 = Counter.GetInstance();
-               counter1.AddOne();
-               Console.WriteLine("counter 1 :"+ counter1.count.ToString());
-            }); 
 
-            Task task2 = Task.Factory.StartNew(() => {  
-               Counter counter2 = Counter.GetInstance();
-               counter2.AddOne();
-               Console.WriteLine("counter 2 :"+ counter2.count.ToString());
-               Console.WriteLine();
-            });  */
-            //counter1.AddOne();
-            //Console.WriteLine("counter 1 :"+ counter1.count.ToString());
-            //Console.WriteLine("counter 2 :"+ counter2.count.ToString());
+            #region Singleton Pattern
+            
+            SingletonService.runMain();
+
             #endregion
 
             #region prototype
@@ -39,7 +30,6 @@ namespace DesignPatterns
             tempEmp1.Name = "temp employee 1";
             tempEmp1.Id = 1;
             tempEmp1.EmpAddress = new Address{City="city 1", Building="B1", StreetName="street name"};
-
             EmployeePrototype tempEmp2 =tempEmp1.ShallowCopy();
 
             Console.WriteLine("========= Temp Emp 1 Original Values=============");
@@ -59,6 +49,8 @@ namespace DesignPatterns
             #endregion
 
             #region Builder
+
+            /*
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
             sb.Append("Word 1,");
             sb.Append("Word 2");
@@ -70,7 +62,6 @@ namespace DesignPatterns
             IBuilder motorCycleBuilder = new MotorCycle("Honda");
 
             // Making Car
-            /* */
             director.BuildCar(carBuilder);
             Product car = carBuilder.GetVehicle();
             WriteColoredLine($"Car {car.Show()}");
@@ -79,6 +70,8 @@ namespace DesignPatterns
             director.BuildCar(motorCycleBuilder);
             Product motorCycle = motorCycleBuilder.GetVehicle();
             WriteColoredLine($"MotorCycle {motorCycle.Show()}");
+            /* */
+
             #endregion
 
             #region Factory Method 
@@ -145,10 +138,12 @@ namespace DesignPatterns
             #endregion
 
             #region Flyweight
+            /*
             DiscountCalcFactory discountFactory = new DiscountCalcFactory();
             var calculator = discountFactory.GetDiscountCalc("day");
             var val = calculator.GetDiscountValue(DateTime.Now.Date);
             WriteColoredLine(val.ToString());
+            */
             #endregion
 
             #endregion  // End of structural patterns
