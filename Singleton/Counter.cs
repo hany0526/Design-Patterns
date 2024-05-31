@@ -5,7 +5,7 @@ namespace DesignPatterns.Singleton
         public int count = 0;
         private static Counter instance = null;
         private static object lockObj = new object();
-        private Counter() {}
+        private Counter() { }
 
         // lazy initialization
         public static Counter GetInstance()
@@ -19,16 +19,17 @@ namespace DesignPatterns.Singleton
                     instance = new Counter();
                 }
             }
-            
+
             return instance;
         }
 
         // third safety Singleton Pattern implementation
         public static Counter GetHanyInstance()
         {
-           // if (instance != null) return instance;
+            // if (instance != null) return instance;
 
-            lock (lockObj) { 
+            lock (lockObj)
+            {
                 return instance ??= new Counter();
             }
         }

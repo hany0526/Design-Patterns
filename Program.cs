@@ -1,8 +1,5 @@
-﻿using DesignPatterns.Builder;
-using DesignPatterns.Singleton;
+﻿using DesignPatterns.Prototype;
 using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
@@ -20,31 +17,16 @@ namespace DesignPatterns
 
 
             #region Singleton Pattern
-            
-            SingletonService.runMain();
+
+            // SingletonService.runMain();
 
             #endregion
 
             #region prototype
-            /*EmployeePrototype tempEmp1 = new TempEmployee();
-            tempEmp1.Name = "temp employee 1";
-            tempEmp1.Id = 1;
-            tempEmp1.EmpAddress = new Address{City="city 1", Building="B1", StreetName="street name"};
-            EmployeePrototype tempEmp2 =tempEmp1.ShallowCopy();
 
-            Console.WriteLine("========= Temp Emp 1 Original Values=============");
-            Console.WriteLine(tempEmp1.ToString());
-            Console.WriteLine("========= Temp Emp 2 Copy========================");
-            Console.WriteLine(tempEmp2.ToString());
 
-            tempEmp2.EmpAddress.City="new city";
-            tempEmp2.Name="sadasdasd";
-            tempEmp2.Id=1000;
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("========= Temp Emp 1 After Change =============");
-            Console.WriteLine(tempEmp1.ToString());
-            Console.WriteLine("========= Temp Emp 2 ==========================");
-            Console.WriteLine(tempEmp2.ToString());*/
+            // PrototypeService.runDeepCopy(); // Done
+             PrototypeService.runShallowCopy();
 
             #endregion
 
