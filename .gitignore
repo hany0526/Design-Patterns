@@ -353,3 +353,9 @@ MigrationBackup/
 obj/project.nuget.cache
 /obj/
 /obj
+.vs/DesignPatterns/v17/.futdcache.v2
+/.vs
+/.vs/DesignPatterns
+/.vs/DesignPatterns/v17
+.vs/DesignPatterns/v17/.suo
+.vs/
