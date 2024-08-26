@@ -61,9 +61,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Learning Projects\\Creational-Design-Patterns\\DesignPatterns.csproj",
-      "projectName": "DesignPatterns",
-      "projectPath": "D:\\Learning Projects\\Creational-Design-Patterns\\DesignPatterns.csproj",
+      "projectUniqueName": "D:\\Learning Projects\\Creational-Design-Patterns\\CreationalDesignPatterns.csproj",
+      "projectName": "CreationalDesignPatterns",
+      "projectPath": "D:\\Learning Projects\\Creational-Design-Patterns\\CreationalDesignPatterns.csproj",
       "packagesPath": "C:\\Users\\MohamedHany\\.nuget\\packages\\",
       "outputPath": "D:\\Learning Projects\\Creational-Design-Patterns\\obj\\",
       "projectStyle": "PackageReference",
