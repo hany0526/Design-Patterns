@@ -1,4 +1,4 @@
-namespace DesignPatterns.StructuralPatterns.Adapter
+namespace StructuralDesignPatterns.StructuralPatterns.Adapter
 {
     public class SalaryAdapter : SalaryCalculator
     {
@@ -7,7 +7,7 @@ namespace DesignPatterns.StructuralPatterns.Adapter
         {
             _emp = new Employee();
             _emp.BasicSalary = _operator.BasicSalary;
-            return base.CalcSalary(_emp);
+            return CalcSalary(_emp);
         }
     }
 }

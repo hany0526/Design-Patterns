@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace DesignPatterns
+namespace StructuralDesignPatterns.StructuralPatterns.Flyweight
 {
     public class DiscountCalcFactory
     {

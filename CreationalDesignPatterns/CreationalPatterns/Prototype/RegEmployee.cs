@@ -13,7 +13,6 @@ namespace CreationalDesignPatterns.CreationalPatterns.Prototype
         public override EmployeePrototype DeepCopy()
         {
             RegEmployee emp = new RegEmployee();
-            // emp = (RegEmployee)this.MemberwiseClone();
 
             emp.Id = Id;
             emp.Name = Name;

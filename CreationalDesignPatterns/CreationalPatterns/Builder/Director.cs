@@ -4,14 +4,14 @@ namespace CreationalDesignPatterns.CreationalPatterns.Builder
 {
     public class Director
     {
-        private Product _builder;
+        private IProductBuilder _builder;
        
         public Director()
         {
         }
 
         // steps to create complex object
-        public void constructProduct(Product builder)
+        public void constructProduct(IProductBuilder builder)
         {
             _builder = builder;
             doBuilder();

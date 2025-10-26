@@ -1,4 +1,4 @@
-namespace DesignPatterns.StructuralPatterns.Facade
+namespace StructuralDesignPatterns.StructuralPatterns.Facade
 {
     public class PaymentProcessor
     {

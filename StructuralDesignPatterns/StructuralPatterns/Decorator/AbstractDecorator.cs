@@ -1,4 +1,6 @@
-namespace DesignPatterns.StructuralPatterns
+using StructuralDesignPatterns.StructuralPatterns.Proxy;
+
+namespace StructuralDesignPatterns.StructuralPatterns.Decorator
 {
     public abstract class AbstractDecorator : SMSService
     {

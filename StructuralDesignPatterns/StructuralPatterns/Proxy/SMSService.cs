@@ -1,4 +1,4 @@
-namespace DesignPatterns.StructuralPatterns
+namespace StructuralDesignPatterns.StructuralPatterns.Proxy
 {
     public abstract class SMSService
     {

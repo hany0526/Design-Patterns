@@ -1,6 +1,6 @@
 using System;
 
-namespace DesignPatterns
+namespace StructuralDesignPatterns.StructuralPatterns.Flyweight
 {
     public interface IDiscountCalaculator
     {

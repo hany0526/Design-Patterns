@@ -3,7 +3,7 @@ using CreationalDesignPatterns.CreationalPatterns.Factory;
 using CreationalDesignPatterns.CreationalPatterns.Prototype;
 using System;
 
-namespace DesignPatterns
+namespace CreationalDesignPatterns
 {
     class Program
     {

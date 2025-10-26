@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace DesignPatterns.StructuralPatterns
+namespace StructuralDesignPatterns.StructuralPatterns.Decorator
 {
     public class NotificationEmailDecorator : AbstractDecorator
     {

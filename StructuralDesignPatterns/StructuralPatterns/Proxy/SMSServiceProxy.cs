@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DesignPatterns.StructuralPatterns
+namespace StructuralDesignPatterns.StructuralPatterns.Proxy
 {
     public class SMSServiceProxy
     {
         //ToDo: Count calls for each customer, if calls > 100 dont send sms
-        private SMSService _smsService;
+        private SMSService? _smsService;
         Dictionary<string, int> sentCount = new Dictionary<string, int>();
         public string SendSMS(string custId, string mobile, string sms)
         {

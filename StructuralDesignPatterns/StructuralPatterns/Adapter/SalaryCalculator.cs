@@ -1,4 +1,4 @@
-namespace DesignPatterns.StructuralPatterns.Adapter
+namespace StructuralDesignPatterns.StructuralPatterns.Adapter
 {
     public class SalaryCalculator
     {
