@@ -2,12 +2,12 @@ namespace StructuralDesignPatterns.StructuralPatterns.Adapter
 {
     public class SalaryAdapter : SalaryCalculator
     {
-        private Employee _emp;
+        private Employee employee;
         public double CalcSalary(MachineOperator _operator)
         {
-            _emp = new Employee();
-            _emp.BasicSalary = _operator.BasicSalary;
-            return CalcSalary(_emp);
+            employee = new Employee();
+            employee.BasicSalary = _operator.BasicSalary;
+            return CalcSalary(employee);
         }
     }
 }

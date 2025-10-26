@@ -4,7 +4,7 @@ namespace StructuralDesignPatterns.StructuralPatterns.Decorator
 {
     public abstract class AbstractDecorator : SMSService
     {
-        protected SMSService notificationService;
+        protected SMSService? notificationService;
         public void SetService(SMSService service)
         {
             notificationService = service;
