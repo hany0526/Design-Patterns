@@ -1,7 +1,4 @@
-﻿using CreationalDesignPatterns.CreationalPatterns.Builder;
-using System;
-
-namespace CreationalDesignPatterns.CreationalPatterns.Builder.Models
+﻿namespace CreationalDesignPatterns.CreationalPatterns.Builder.Models
 {
     public class SmallVehicle : Product, IProductBuilder
     {

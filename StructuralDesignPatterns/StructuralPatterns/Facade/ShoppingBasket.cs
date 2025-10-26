@@ -1,6 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
-
 namespace StructuralDesignPatterns.StructuralPatterns.Facade
 {
     public class ShoppingBasket

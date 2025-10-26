@@ -1,9 +1,7 @@
-using CreationalDesignPatterns.CreationalPatterns.Builder;
-
 namespace CreationalDesignPatterns.CreationalPatterns.Builder.Models
 {
     // Concrete Builder Class.
-    public class Car: Product, IProductBuilder
+    public class Car : Product, IProductBuilder
     {
 
         private string brandName;

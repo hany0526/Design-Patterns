@@ -1,11 +1,9 @@
-using CreationalDesignPatterns.CreationalPatterns.Builder.Models;
-
 namespace CreationalDesignPatterns.CreationalPatterns.Builder
 {
     public class Director
     {
         private IProductBuilder _builder;
-       
+
         public Director()
         {
         }

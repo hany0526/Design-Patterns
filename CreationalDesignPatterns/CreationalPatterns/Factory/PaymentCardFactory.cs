@@ -1,5 +1,3 @@
-using CreationalDesignPatterns.CreationalPatterns.Factory;
-
 namespace CreationalDesignPatterns.CreationalPatterns.Factory
 {
     public class PaymentCardFactory

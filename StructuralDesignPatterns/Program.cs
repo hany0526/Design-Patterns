@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace StructuralDesignPatterns
+﻿namespace StructuralDesignPatterns
 {
-    class Program2
+    class Program
     {
         static void WriteColoredLine(string text, ConsoleColor color = ConsoleColor.Green)
         {

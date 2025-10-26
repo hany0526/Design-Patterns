@@ -1,6 +1,6 @@
-﻿using System;
+﻿using CreationalDesignPatterns.CreationalPatterns.Builder.Models;
+using System;
 using System.Text;
-using CreationalDesignPatterns.CreationalPatterns.Builder.Models;
 
 namespace CreationalDesignPatterns.CreationalPatterns.Builder
 {
@@ -25,33 +25,33 @@ namespace CreationalDesignPatterns.CreationalPatterns.Builder
             WriteColoredLine(sb.ToString(), ConsoleColor.Cyan);
         }
 
-        public static void runBuilder() 
+        public static void runBuilder()
         {
             WriteColoredLine("***Builder Pattern***", ConsoleColor.Yellow);
             // Director director = new Director();
 
             // 1, Making Car
             Product car = ProductFactory.getInstance(1, "Jeep");
-            
+
             car.prepareProduct();
             // director.constructProduct(carBuilder);
-            
+
             WriteColoredLine($"Car {car.Show()}");
 
             // 2, Making Motor Cycle
             Product motorCycle = ProductFactory.getInstance(2, "Honda");
-            
+
             motorCycle.prepareProduct();
             // director.constructProduct(motorCycle);
-            
+
             WriteColoredLine($"MotorCycle {motorCycle.Show()}");
 
             // 3, Making Small Vehicle
             Product smallVehicle = ProductFactory.getInstance(3, "Mine cooper");
-            
+
             smallVehicle.prepareProduct();
             // director.constructProduct(smallVehicle);
-            
+
             WriteColoredLine($"smallVehicle {smallVehicle}");
 
 

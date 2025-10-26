@@ -1,12 +1,10 @@
-using CreationalDesignPatterns.CreationalPatterns.Builder;
-
 namespace CreationalDesignPatterns.CreationalPatterns.Builder.Models
 {
     public class MotorCycle : Product, IProductBuilder
     {
         private string brandName;
 
-        public MotorCycle() 
+        public MotorCycle()
         {
         }
 

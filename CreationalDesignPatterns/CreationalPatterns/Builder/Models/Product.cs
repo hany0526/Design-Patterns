@@ -42,7 +42,7 @@ namespace CreationalDesignPatterns.CreationalPatterns.Builder.Models
             return Show();
         }
 
-        public void prepareProduct() 
+        public void prepareProduct()
         {
             StartUpOperations();
             BuildBody();

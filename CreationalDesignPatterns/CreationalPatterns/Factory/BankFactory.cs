@@ -7,8 +7,8 @@ namespace CreationalDesignPatterns.CreationalPatterns.Factory
         {
             switch (bankCode)
             {
-                case "123456": return new BankA(); 
-                case "111111": return new BankB();     
+                case "123456": return new BankA();
+                case "111111": return new BankB();
                 default: return null;
             }
 

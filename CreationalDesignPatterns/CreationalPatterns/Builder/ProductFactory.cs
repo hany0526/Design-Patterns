@@ -28,7 +28,7 @@ namespace CreationalDesignPatterns.CreationalPatterns.Builder
                 case "Car": return new Car(name);
                 case "Motor": return new MotorCycle(name);
                 case "SmallVehicle": return new SmallVehicle(name);
-                default : return null;
+                default: return null;
             }
         }
 

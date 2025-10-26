@@ -1,5 +1,4 @@
-﻿using CreationalDesignPatterns.CreationalPatterns.Prototype;
-using System;
+﻿using System;
 
 namespace CreationalDesignPatterns.CreationalPatterns.Prototype
 {
@@ -62,7 +61,7 @@ namespace CreationalDesignPatterns.CreationalPatterns.Prototype
             tempEmp1.Id = 1000;
             tempEmp1.Name = "sadasdasd";
             tempEmp1.EmpAddress.City = "new city";
-            
+
             System.Threading.Thread.Sleep(1000);
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("========= Temp Emp 1 After Change =============");
@@ -70,7 +69,7 @@ namespace CreationalDesignPatterns.CreationalPatterns.Prototype
 
             Console.WriteLine("========= Temp Emp 2 ==========================");
             Console.WriteLine(tempEmp2.ToString());
-            
+
             Console.WriteLine(tempEmp1.Name);
             Console.WriteLine(tempEmp2.Name);
         }

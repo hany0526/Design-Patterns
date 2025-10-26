@@ -1,6 +1,4 @@
 ﻿using CreationalDesignPatterns.CreationalPatterns.Builder;
-using CreationalDesignPatterns.CreationalPatterns.Factory;
-using CreationalDesignPatterns.CreationalPatterns.Prototype;
 using System;
 
 namespace CreationalDesignPatterns
@@ -27,14 +25,14 @@ namespace CreationalDesignPatterns
             #region prototype
 
 
-                // PrototypeService.runDeepCopy(); // Done
-                // PrototypeService.runShallowCopy(); // not change same reference 
+            // PrototypeService.runDeepCopy(); // Done
+            // PrototypeService.runShallowCopy(); // not change same reference 
 
             #endregion
 
             #region Builder
 
-                BuilderService.runBuilder();
+            BuilderService.runBuilder();
 
             #endregion
 

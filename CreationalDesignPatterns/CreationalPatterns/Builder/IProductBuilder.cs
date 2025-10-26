@@ -1,5 +1,3 @@
-using CreationalDesignPatterns.CreationalPatterns.Builder.Models;
-
 namespace CreationalDesignPatterns.CreationalPatterns.Builder
 {
 

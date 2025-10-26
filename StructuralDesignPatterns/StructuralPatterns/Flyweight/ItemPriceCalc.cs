@@ -1,5 +1,3 @@
-using System;
-
 namespace StructuralDesignPatterns.StructuralPatterns.Flyweight
 {
     public class ItemsDiscountCalc : IDiscountCalaculator
